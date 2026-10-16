@@ -2,7 +2,7 @@
 
 Personal portfolio of Shivani Kumari: a static, single-page site built with plain HTML, CSS and JavaScript.
 
-**Live:** https://shivani-portfolio.vercel.app _(update after deploy)_
+**Live:** https://portfolio-kq1ndguqi-shivani-50e1.vercel.app/
 
 ## Sections
 
