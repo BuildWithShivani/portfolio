@@ -6,7 +6,7 @@ const PORTFOLIO = {
   location: "Noida, Uttar Pradesh",
   photo: "assets/photo.jpg",
   photoNote: "hi, that's me!",
-  resume: "", // "assets/Shivani_Kumari_Resume.pdf" — add back once a public-safe resume is ready
+  resume: "assets/Shivani_Kumari_Resume.pdf",
 
   // little sticky notes around the hero (Nitish-style)
   heroNotes: [

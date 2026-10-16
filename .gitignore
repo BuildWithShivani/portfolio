@@ -4,6 +4,3 @@ desktop.ini
 _qa*.html
 node_modules/
 .vercel
-
-# resume kept local until a public version is ready
-assets/Shivani_Kumari_Resume.pdf
