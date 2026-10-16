@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Shivani Kumari | Computer Engineering Student</title>
+<meta name="description" content="Shivani Kumari — Diploma in Computer Engineering student at Meerabai DSEU, building practical apps with Python, SQL and AI tools, and blending tech with creativity." />
+<meta name="author" content="Shivani Kumari" />
+<meta property="og:type" content="profile" />
+<meta property="og:title" content="Shivani Kumari | Computer Engineering Student" />
+<meta property="og:description" content="Building practical apps with Python, SQL and AI tools — and blending tech with creativity." />
+<meta property="og:image" content="assets/photo.jpg" />
+<meta name="twitter:card" content="summary" />
+<link rel="me" href="https://github.com/BuildWithShivani" />
+<link rel="me" href="https://www.linkedin.com/in/shivani-kumari-ai/" />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='46' fill='%23fbfaf6' stroke='%231f2024' stroke-width='6'/><text x='50' y='64' font-size='40' font-family='monospace' text-anchor='middle' fill='%231f2024'>sk</text></svg>" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=DM+Mono:wght@400;500&family=Gochi+Hand&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<a class="skip" href="#about">Skip to content</a>
+
+<header class="nav">
+  <a href="#top" class="brand"><span class="brand-mark">sk</span>Shivani</a>
+  <nav id="navLinks">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#github">Code</a>
+  </nav>
+  <div class="nav-actions">
+    <button class="theme" id="themeBtn" aria-label="Toggle dark mode"></button>
+    <a class="header-cta" href="#contact">Let's talk <span>↗</span></a>
+  </div>
+</header>
+
+<!-- Harsh-style road: checkpoint boards + a walker who moves as you scroll -->
+<aside class="rail" id="rail" aria-hidden="true">
+  <div class="road"><div class="lane"></div></div>
+  <div class="boards" id="boards"></div>
+  <div class="walker" id="walker">
+    <svg viewBox="0 0 60 96" width="60" height="96">
+      <ellipse class="w-shadow" cx="30" cy="92" rx="14" ry="3" />
+      <g class="leg leg-l"><rect x="23" y="58" width="6" height="28" rx="3" fill="#2a2b30"/><rect x="21" y="84" width="10" height="5" rx="2.5" fill="#111"/></g>
+      <g class="leg leg-r"><rect x="31" y="58" width="6" height="28" rx="3" fill="#33343a"/><rect x="29" y="84" width="10" height="5" rx="2.5" fill="#111"/></g>
+      <g class="torso">
+        <path d="M18 36 Q30 30 42 36 L44 62 Q30 66 16 62 Z" fill="#1d1e22"/>
+        <path d="M27 34 L30 46 L33 34 Z" fill="#3a3b42"/>
+        <rect class="arm" x="13" y="37" width="6" height="22" rx="3" fill="#1d1e22"/>
+        <rect x="41" y="37" width="6" height="22" rx="3" fill="#1d1e22"/>
+        <circle cx="30" cy="19" r="12" fill="#c98f6b"/>
+        <path d="M18 18 Q19 5 30 6 Q42 5 42 18 Q40 11 30 11 Q21 11 18 18 Z" fill="#231a16"/>
+        <circle cx="30" cy="6" r="5" fill="#231a16"/>
+        <g fill="none" stroke="#111" stroke-width="1.6"><rect x="21.5" y="16" width="7" height="5.5" rx="1.5"/><rect x="31.5" y="16" width="7" height="5.5" rx="1.5"/><path d="M28.5 18.5h3"/></g>
+        <path d="M27 26 Q30 28 33 26" fill="none" stroke="#8a4f3a" stroke-width="1.3" stroke-linecap="round"/>
+      </g>
+    </svg>
+  </div>
+</aside>
+
+<main id="top">
+  <!-- HERO -->
+  <section class="hero">
+    <div class="dots"></div>
+    <div class="hero-text">
+      <p class="eyebrow">Shivani / portfolio · Noida, India</p>
+      <h1 id="heroName"></h1>
+      <p class="headline" id="heroHeadline"></p>
+      <p class="role mono" id="heroRole"></p>
+      <div class="cta">
+        <a class="btn solid" href="#projects">See my work →</a>
+        <a class="btn" id="heroResume" target="_blank" rel="noopener" hidden>Download résumé ↓</a>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <figure class="polaroid">
+        <span class="tape"></span>
+        <img id="photo" alt="Portrait of Shivani Kumari" />
+        <figcaption class="hand" id="photoNote"></figcaption>
+      </figure>
+      <div id="heroNotes"></div>
+      <div class="stamp mono"><span>NOIDA / IST</span><b id="clock">--:--</b></div>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <section id="about" class="cp rv" data-cp="Intro">
+      <p class="eyebrow">Checkpoint 01 · Intro</p>
+      <h2>Where the journey begins.</h2>
+      <div class="about-grid">
+        <div>
+          <p class="lede" id="aboutText"></p>
+          <p class="lede" id="aboutText2"></p>
+        </div>
+        <div class="now" id="nowCards"></div>
+      </div>
+      <div class="stats" id="stats"></div>
+      <div class="principles" id="principles"></div>
+    </section>
+
+    <section id="skills" class="cp rv" data-cp="Skills">
+      <p class="eyebrow">Checkpoint 02 · Skills</p>
+      <h2>What I work with.</h2>
+      <p class="lede">The tools I use today. Everything marked <span class="mono small">basic</span> is something I'm still getting better at.</p>
+      <div id="skillGrid"></div>
+    </section>
+
+    <section id="projects" class="cp rv" data-cp="Projects">
+      <p class="eyebrow">Checkpoint 03 · Projects</p>
+      <h2>Things I've built.</h2>
+      <p class="lede">Small, student-sized projects that started from everyday problems.</p>
+      <div class="projects" id="projectList"></div>
+    </section>
+
+    <section id="experience" class="cp rv" data-cp="Experience">
+      <p class="eyebrow">Checkpoint 04 · Experience</p>
+      <h2>Learning on the job.</h2>
+      <ul class="tl" id="expList"></ul>
+    </section>
+
+    <section id="education" class="cp rv" data-cp="Education">
+      <p class="eyebrow">Checkpoint 05 · Education</p>
+      <h2>Milestones along the way.</h2>
+      <ul class="tl" id="eduList"></ul>
+      <div class="certs" id="achList"></div>
+    </section>
+
+    <section id="lens" class="cp rv" data-cp="Lens">
+      <p class="eyebrow">Checkpoint 06 · Through my lens</p>
+      <h2>Photography on the side.</h2>
+      <p class="lede" id="lensText"></p>
+      <div class="gallery" id="gallery"></div>
+    </section>
+
+    <section id="github" class="cp rv" data-cp="Code">
+      <p class="eyebrow">Checkpoint 07 · Code</p>
+      <h2>My code lives here.</h2>
+      <p class="lede">Public repositories show up here automatically from GitHub.</p>
+      <a class="btn gh-btn" id="ghLink" target="_blank" rel="noopener"></a>
+      <img class="gh-chart" id="ghChart" alt="GitHub contribution chart" loading="lazy" />
+      <div class="repos" id="repoList"></div>
+    </section>
+
+    <section id="contact" class="cp rv end" data-cp="Finish">
+      <p class="eyebrow">Checkpoint 08 · Finish</p>
+      <h2>The journey doesn't end here.</h2>
+      <p class="lede">Got an internship, a project idea, or just want to say hi? I'm open to opportunities in IT, AI-enabled work and digital technology.</p>
+      <div class="contact-grid">
+        <form class="contact-form" id="contactForm">
+          <label>Your name<input name="name" required autocomplete="name" /></label>
+          <label>Your email<input name="email" type="email" required autocomplete="email" /></label>
+          <label>Your message<textarea name="message" rows="5" required></textarea></label>
+          <button class="btn solid" type="submit">Create email ✉</button>
+          <p class="form-note mono" id="formNote">Opens your email app with the message ready to send.</p>
+        </form>
+        <div class="socials" id="socials"></div>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer class="wrap">
+  <span>© <span id="year"></span> Shivani Kumari · made with curiosity &amp; a lot of chai</span>
+  <a href="#top">back to top ↑</a>
+</footer>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
