@@ -2,7 +2,7 @@
 <html lang="en" data-theme="light">
 <head>
 <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 <title>Shivani Kumari | Computer Engineering Student</title>
 <meta name="description" content="Shivani Kumari — Diploma in Computer Engineering student at Meerabai DSEU, building practical apps with Python, SQL and AI tools, and blending tech with creativity." />
 <meta name="author" content="Shivani Kumari" />
@@ -24,7 +24,7 @@
 
 <header class="nav">
   <a href="#top" class="brand"><span class="brand-mark">sk</span>Shivani</a>
-  <nav id="navLinks">
+  <nav id="navLinks" aria-label="Sections">
     <a href="#about">About</a>
     <a href="#skills">Skills</a>
     <a href="#projects">Projects</a>
@@ -32,6 +32,18 @@
     <a href="#github">Code</a>
   </nav>
   <div class="nav-actions">
+    <details class="menu" id="menu">
+      <summary>Menu</summary>
+      <nav class="menu-list" aria-label="Section menu">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#github">Code</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </details>
     <button class="theme" id="themeBtn" aria-label="Toggle dark mode"></button>
     <a class="header-cta" href="#contact">Let's talk <span>↗</span></a>
   </div>

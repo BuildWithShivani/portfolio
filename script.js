@@ -15,6 +15,15 @@ try { saved = localStorage.getItem("theme"); } catch (e) {}
 setTheme(saved || "light");
 $("themeBtn").onclick = () => setTheme(root.dataset.theme === "dark" ? "light" : "dark");
 
+// ---------- small-screen menu ----------
+const menu = $("menu");
+const closeMenu = () => { menu.open = false; };
+menu.querySelectorAll("a").forEach((a) => a.addEventListener("click", closeMenu));
+document.addEventListener("click", (e) => { if (menu.open && !menu.contains(e.target)) closeMenu(); });
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape" && menu.open) { closeMenu(); menu.querySelector("summary").focus(); }
+});
+
 // ---------- hero ----------
 const [first, ...rest] = P.name.split(" ");
 $("heroName").innerHTML = `${esc(first)}<br><em>${esc(rest.join(" "))}.</em>`;
@@ -134,7 +143,7 @@ const boards = [...document.querySelectorAll(".board")];
 boards.forEach((b) => b.addEventListener("click", () => document.getElementById(b.dataset.target).scrollIntoView({ behavior: "smooth" })));
 
 const rail = $("rail");
-const navLinks = [...document.querySelectorAll("#navLinks a")];
+const navLinks = [...document.querySelectorAll("#navLinks a, .menu-list a")];
 let stopTimer;
 function onScroll(moving = true) {
   const h = document.documentElement;
